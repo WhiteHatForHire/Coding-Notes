@@ -1,0 +1,4 @@
+**Code ideas**
+
+Deal or no deal or variation with Jquery
+
