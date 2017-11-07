@@ -1,0 +1,21 @@
+**J - QUERY**
+
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");    **change css
+    $("#target1").prop("disabled", true); **change html item state
+    $("#target1").addClass("shake");   	  **add class
+    $("#target4").remove();		  **remove item
+    $("#target2").appendTo("#right-well");**append item
+$("#target5").clone().appendTo("#left-well");**Clone, then append
+  });
+</script>
+
+
+
+
+**Code idea**
+
+Deal or no deal or variation
+
