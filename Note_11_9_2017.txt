@@ -1,0 +1,14 @@
+***Java Script Notes***
+
+push() adds to the end of an array
+
+pop() takes the last value of an array
+
+unshift() adds a new value in the beginning of an array
+
+shift() pops the first value of an array
+
+****************************************************
+
+=== is strict equals
+
