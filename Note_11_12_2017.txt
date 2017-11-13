@@ -1,0 +1,111 @@
+function multiplyAll(arr) {
+  var product = 1;
+  
+
+  for(var i = 0; i < arr.length; i++){
+    for (var j = 0; j < arr[i].length; j++){
+      product *= arr[i][j];
+    }
+  }
+
+  return product;
+}
+
+
+multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+****when selecting array values arr[i[j]] doesn't work,
+use arr[i][j] instead****
+
+
+
+.hasOwnProperty() looks and sees if there is that property 
+
+************************************************************
+***Loop through each index before returning anything***
+
+function lookUpProfile(firstName, prop){
+
+for (i = 0; i < contacts.length; i++){
+  if (contacts[i].firstName === firstName){
+      if (contacts[i].hasOwnProperty(prop)){
+        return contacts[i][prop];
+      } else{
+        return "No such property";
+      }
+    
+    }
+  }
+return "No such contact";
+}
+
+****NOT****
+
+function lookUpProfile(firstName, prop){
+
+for (i = 0; i < contacts.length; i++){
+  if (contacts[i].firstName === firstName){
+      if (contacts[i].hasOwnProperty(prop)){
+        return contacts[i][prop];
+      } else{
+        return "No such property";
+      }
+    
+    } else {
+  }
+	return "No such contact";
+	}
+
+}
+
+************************************************************
+
+***random number between 5 and 15***
+
+var myRandom = randomRange(5, 15);
+
+function ourRandomRange(ourMin, ourMax) {
+
+  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+}
+
+ourRandomRange(1, 9);
+
+************************************************************
+
+**STRING MATCHING**
+**REGULAR EXPRESSIONS**
+/ is the start of the regular expression.
+
+the is the pattern we want to match.
+
+/ is the end of the regular expression.
+
+g means global, which causes the pattern to return all matches in the string, not just the first one.
+
+i means that we want to ignore the case (uppercase or lowercase) when searching for the pattern.
+***
+***
+var testString = "Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.";
+var expression = /and/gi;  
+
+// This code counts the matches of expression in testString
+var andCount = testString.match(expression).length;
+
+
+********OBJECTS AS VARIABLES**************
+var Car = function(wheels, seats, engines) {
+  //Change this constructor
+  this.wheels = wheels;
+  this.seats = seats;
+  this.engines = engines;
+};
+
+//Try it out here
+var myCar = new Car(6, 3, 1);
+
+******************************8
+
+
+
+
