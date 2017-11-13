@@ -1,0 +1,89 @@
+***Map can be done with a val, index, or array argument***
+
+var oldArray = [1,2,3,4,5];
+
+// Only change code below this line.
+
+var newArray = oldArray.map(function(val){
+  return val + 3;
+});
+
+***********************************************************
+
+***Reduce iterates through array and condenses into one values***
+
+var array = [4,5,6,7,8];
+var singleVal = 0;
+
+// Only change code below this line.
+
+singleVal = array.reduce(function(previousVal, currentVal) {
+  return previousVal + currentVal;
+}, 0);
+
+***********************************************************
+
+***filter array of some condition into new array***
+
+var oldArray = [1,2,3,4,5,6,7,8,9,10];
+
+// Only change code below this line.
+
+var newArray = oldArray.filter(function(val){
+  return val < 6;
+});
+
+***********************************************************
+
+.reverse() reverses arrays
+
+******SORTING**************
+
+array.sort(function(a, b){
+  return b - a;
+});
+
+//largest to smallest
+
+array.sort(function(a, b){
+  return a - b;
+});
+
+//smallest to largest
+
+***ARRAY CONCATENATION***
+
+var oldArray = [1,2,3];
+var newArray = [];
+
+var concatMe = [4,5,6];
+
+newArray = oldArray.concat(concatMe);
+
+***********************************************************
+
+****SPLIT STRINGS****
+
+var string = "Split me into an array";
+var array = [];
+
+array = string.split(' ');
+
+***********************************************************
+
+***JOIN ARRAY INTO STRING--CAN PUT ANYTHING BETWEEN****
+
+var joinMe = ["Split","me","into","an","array"];
+var joinedString = '';
+
+joinedString = joinMe.join(" ");
+
+//makes Split me into an array//
+
+**THIS VERSION ADDS AND***
+joinedString = joinMe.join(" and ");
+
+***********************************************************
+
+
+
